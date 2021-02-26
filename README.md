@@ -139,6 +139,10 @@ and then, i tuned for those 4 models. I get some new models:
 
 Based on the table above, it can be seen that the RandomForest_tunned_rus model has the highest Recall Score. So that the model will be used for the HOME EQUITY LOAN prediction model. For the details you can visit <a href="https://github.com/ramzymohammad/Final-Project-Purwadhika-JCDS-1104-LoanPrediction/blob/main/Modelling_2.ipynb">'Modelling'</a>.
 
+Dashboard
+-------
+
+![MachinLearning.jpg](static/Picture1.png)
 
 
 
