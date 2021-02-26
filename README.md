@@ -1,6 +1,6 @@
 # Final-Project-Purwadhika-JCDS-1104-LoanPrediction
 
-![MachinLearning.jpg](static/giphy.mp4)
+![MachinLearning.jpg](static/giphy.gif)
 
 
 About
