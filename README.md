@@ -1,5 +1,8 @@
 # Final-Project-Purwadhika-JCDS-1104-LoanPrediction
 
+![MachinLearning.jpg](static/giphy.mp4)
+
+
 About
 -------
 
@@ -41,7 +44,7 @@ In this step, I tried to clean the dataset from missing values, duplicate data, 
 
 Exploratory Data Analysis
 -------
-This step, i'am asked find the some information from the dataset. I am looking for correlations between features, univariate analysis, bivariate analysis, and multivariate analysis. Furthemore you can access <a href="https://github.com/ramzymohammad/Final-Project-Purwadhika-JCDS-1104-LoanPrediction/blob/main/EDA_2.ipynb">'EDA'</a>.
+This step, i am asked find the some information from the dataset. I am looking for correlations between features, univariate analysis, bivariate analysis, and multivariate analysis. Furthemore you can access <a href="https://github.com/ramzymohammad/Final-Project-Purwadhika-JCDS-1104-LoanPrediction/blob/main/EDA_2.ipynb">'EDA'</a>.
 
 
 
