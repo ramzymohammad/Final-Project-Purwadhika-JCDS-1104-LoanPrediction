@@ -1,0 +1,116 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+    <p><span class="badge badge-secondary">TABLE</span></p>
+
+    <div class='table table-bordered table-sm table-light' style='overflow: auto; height: 200px; width: 35%; margin:0 auto'>
+        <table>
+            <th>
+                <td>BAD</td>
+                <td>LOAN</td>
+                <td>MORTDUE</td>
+                <td>VALUE</td>
+                <td>REASON</td>
+                <td>JOB</td>
+                <td>YOJ</td>
+                <td>DEROG</td>
+                <td>DELINQ</td>
+                <td>CLAGE</td>
+                <td>NINQ</td>
+                <td>CLNO</td>
+                <td>DEBTINC</td>
+            </th>
+            {% for item in data %}
+            <tr>
+                <td>*</td>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+                <td>{{item[5]}}</td>
+                <td>{{item[6]}}</td>
+                <td>{{item[7]}}</td>
+                <td>{{item[8]}}</td>
+                <td>{{item[9]}}</td>
+                <td>{{item[10]}}</td>
+                <td>{{item[11]}}</td>
+                <td>{{item[12]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <form method="POST" action="http://localhost:9000/update_fn">
+        <br>
+        <p><span class="badge badge-secondary">INPUT DATA</span></p>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">BAD:</span>
+                <input name="BAD" type="number" step="1" style="width: 350px" class="form-control" required=True/>
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">LOAN:</span>
+                    <input type="number" name="LOAN" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">MORTDUE:</span>
+                    <input type="number" name="MORTDUE" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">VALUE:</span>
+                    <input type="number" name="VALUE" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">REASON:</span>    
+            <select name="REASON" style="width: 350px" class="form-control" required="required">
+                <option value="HomeImp">HomeImp</option>
+                <option value="DebtCon">DebtCon</option>
+                <option disabled selected hidden>Choose One</option>
+            </select>
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">JOB:</span>    
+            <select name="JOB" style="width: 350px" class="form-control" required="required">
+                <option value="Other">Other</option>
+                <option value="Sales">Sales</option>
+                <option value="Self">Self</option>
+                <option value="Mgr">Mgr</option>
+                <option value="Office">Office</option>
+                <option value="ProfExe">ProfExe</option>
+                <option disabled selected hidden>Choose One</option>
+            </select>
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">YOJ:</span>
+                <input type="number" name="YOJ" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">DEROG:</span>
+                <input type="number" name="DEROG" step="0.01" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">DELINQ:</span>
+                <input type="number" name="DELINQ" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">CLAGE:</span>
+                <input type="number" name="CLAGE" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">NINQ:</span>
+                <input type="number" name="NINQ" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">CLNO:</span>
+                <input type="number" name="CLNO" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+            <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 150px">DEBTINC:</span>
+                <input type="number" name="DEBTINC" step="1" style="width: 350px" id="totalAmt" class="form-control" required=True/> 
+            </div>
+        <br>
+        <button type="submit" style="background-color: salmon; color: whitesmoke" class="btn btn-info">Input Data</button>
+    </form>
+    <br>
+</center>
+
+{% endblock %}

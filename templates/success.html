@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<center>
+    <div class="p1">
+        <b>Input Success!</b>
+    </div>
+    <br>
+    <div class="container"  >
+        <p style="color:white">
+        <b>BAD: </b> {{BAD}}<br><br>
+        <b>LOAN: </b> {{LOAN}}<br><br>
+        <b>MORTDUE: </b> {{MORTDUE}}<br><br>
+        <b>VALUE: </b> {{VALUE}}<br><br>
+        <b>REASON: </b> {{REASON}}<br><br>
+        <b>JOB: </b> {{JOB}}<br><br>
+        <b>YOJ: </b> {{YOJ}}<br><br>
+        <b>DEROG: </b> {{DEROG}}<br><br>
+        <b>DELINQ: </b> {{DELINQ}}<br><br>
+        <b>CLAGE: </b> {{CLAGE}}<br><br>
+        <b>NINQ: </b> {{NINQ}}<br><br>
+        <b>CLNO: </b> {{CLNO}}<br><br>
+        <b>DEBTINC: </b> {{DEBTINC}}<br><br>
+    </div>
+    </p>
+    <hr>
+    <a href="/db_fn" target="_self" >
+        <button style="background-color: salmon; color: whitesmoke" class="btn btn-light">
+            Input Again
+        </button>    
+    </a>
+    <a href="/" target="_self" >
+        <button style="background-color: salmon; color: whitesmoke" class="btn btn-light">
+            Back to Home
+        </button>    
+    </a>
+</center>
+
+{% endblock %}
